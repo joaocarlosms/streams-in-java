@@ -2,18 +2,18 @@ package challenge2;
 
 public class Person {
 	private Integer id;
-	private String name;
+	private String nome;
 	private String email;
 	private String cpf;
-	private String age;
+	private Integer idade;
 	
-	public Person(Integer id, String name, String email, String cpf, String age) {
+	public Person(Integer id, String nome, String email, String cpf, Integer idade) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.nome = nome;
 		this.email = email;
 		this.cpf = cpf;
-		this.age = age;
+		this.idade = idade;
 	}
 	
 	public Person() {
@@ -29,11 +29,11 @@ public class Person {
 	}
 
 	public String getName() {
-		return name;
+		return nome;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.nome = name;
 	}
 
 	public String getEmail() {
@@ -52,16 +52,16 @@ public class Person {
 		this.cpf = cpf;
 	}
 
-	public String getAge() {
-		return age;
+	public Integer getidade() {
+		return idade;
 	}
 
-	public void setAge(String age) {
-		this.age = age;
+	public void setidade(Integer idade) {
+		this.idade = idade;
 	}
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + ", email=" + email + ", cpf=" + cpf + ", age=" + age + "]";
+		return "Person [id=" + id + ", name=" + nome + ", email=" + email + ", cpf=" + cpf + ", idade=" + idade + "]";
 	}
 }
