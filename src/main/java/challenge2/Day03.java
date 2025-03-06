@@ -10,6 +10,12 @@ public class Day03 extends GenericDay {
 	public void executeChallenge(List<Person> lista) {
 		System.out.println("Ordenando em ordem crescente");
 		lista.stream()
+			.sorted(Comparator.comparing((Person p)->p.getName()))
+			.collect(Collectors.toList())
+			.forEach(p -> System.out.println(p));
+		
+		System.out.println("Ordenando em ordem decrescente");
+		lista.stream()
 			.sorted(Comparator.comparing((Person p)->p.getName()).reversed())
 			.collect(Collectors.toList())
 			.forEach(p -> System.out.println(p));
