@@ -20,7 +20,7 @@ public class Main {
 			Type type = new TypeToken<List<Person>>() {}.getType();
 			List<Person> persons = gson.fromJson(jsonStr, type);
 			
-			GenericDay day = new Day06();
+			GenericDay day = new Day07();
 			day.executeChallenge(persons);
 			
 		} 
